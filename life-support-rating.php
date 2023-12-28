@@ -99,9 +99,9 @@ class LifeSupportRating extends PowerConsumption
         return $deletedRows;
     }
 
-    private function getLifeSupportRatingValue($OxygenGeneratorRating, $Co2ScrubberRating): int
+    private function getLifeSupportRatingValue($oxygenGeneratorRating, $co2ScrubberRating): int
     {
-        return bindec($OxygenGeneratorRating) * bindec($Co2ScrubberRating);
+        return bindec($oxygenGeneratorRating) * bindec($co2ScrubberRating);
     }
 }
 
